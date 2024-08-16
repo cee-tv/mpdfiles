@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HBO HITS</title>
-  <link rel="icon" href="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch111_170_122">
+  <title>HBO</title>
+  <link rel="icon" href="https://static.wikia.nocookie.net/hbo-max/images/1/1e/HBO-WhiteLogo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css">
   <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.debug.js"></script>
   <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
@@ -16,11 +16,11 @@
 <body>
   <div class="theme-blue">
     <video data-shaka-player id="video" autoplay height="1080" width="1920" preload="auto" controls
-           poster="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch111_170_122">
+           poster="https://static.wikia.nocookie.net/hbo-max/images/1/1e/HBO-WhiteLogo.png">
     </video>
   </div>
   <script>
-    const manifestUri = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/5055/default.mpd';
+    const manifestUri = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default.mpd';
 
     function initApp() {
       shaka.polyfill.installAll();
@@ -49,7 +49,7 @@
       player.configure({
         drm: {
           clearKeys: {
-            '5d600eb70944d681c26c1f48fbe61f10' : '796139ba05a2ab425f978c7fd98b4372'
+            'a098896d2b11c5f3906a993c3ba5c610' : 'f3f842c54cc96cbbd0bcb96a4cb8a813'
           }
         }
       });
@@ -84,7 +84,7 @@
     document.addEventListener('DOMContentLoaded', initApp);
     Object.defineProperty(navigator, 'userAgent', {
       get: function(){
-        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36';
       }
     });
   </script>
